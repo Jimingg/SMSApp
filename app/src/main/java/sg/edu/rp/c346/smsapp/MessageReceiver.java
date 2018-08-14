@@ -33,8 +33,8 @@ public class MessageReceiver extends BroadcastReceiver {
                 // Obtain the message body
                 String message = currentMessage.getDisplayMessageBody();
                 // Display in Toast
-                Toast.makeText(context, "Sender Number: " + senderNum +
-                        ", Message: " + message, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "You received a message from " + senderNum + "\n" + "\n"+
+                        " Message: " + message, Toast.LENGTH_LONG).show();
             }
         } catch (Exception e) {
             Log.e("SmsReceiver", "Error: " + e);
